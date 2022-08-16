@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gemplanner/static/css/main.2ccd4313.css",
+    "main.js": "/gemplanner/static/js/main.f2a457b4.js",
+    "index.html": "/gemplanner/index.html",
+    "main.2ccd4313.css.map": "/gemplanner/static/css/main.2ccd4313.css.map",
+    "main.f2a457b4.js.map": "/gemplanner/static/js/main.f2a457b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ccd4313.css",
+    "static/js/main.f2a457b4.js"
+  ]
+}

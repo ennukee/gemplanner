@@ -53,6 +53,9 @@ body {
 #quest-name {
     margin-top: -.5rem;
     font-size: 2rem;
+
+    display: flex;
+    align-items: center;
 }
 
 /**
@@ -132,3 +135,106 @@ body {
 #Scion:not(.active):hover {
     background-color: rgba(128,128,128,0.3);
 }
+
+#toggle-quest-help {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+
+    border: 2px solid #eee;
+    border-radius: 100%;
+
+    text-align: center;
+    vertical-align: middle;
+
+    user-select: none;
+    background-color: #eee;
+    color: #111;
+}
+
+#toggle-quest-help:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#toggle-quest-help:active {
+    background-color: #aaa;
+    /* color: #eee; */
+}
+
+#gem-display-section {
+    width: 60%;
+    padding: 0 20%;
+    margin-top: 2rem;
+
+    display: flex;
+    gap: 2rem;
+}
+
+#direct-gems, #indirect-gems {
+    width: 50%;
+}
+
+.gem-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gem-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.gem-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.gem-list {
+    display: grid;
+    margin-top: 2rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem 0.5rem;
+}
+
+.gem-name {
+    place-self: center center;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.gem-name.dexterity {
+    color: rgba(0, 128, 0, 1);
+}
+
+.gem-name.intelligence {
+    color: rgba(64, 64, 196, 1);
+}
+
+.gem-name.strength {
+    color: rgba(128, 0, 0, 1);
+}
+
+#quest-helper {
+    display: flex;
+    place-content: center center;
+}
+
+#quest-help-box {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #eee;
+    color: #111;
+
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    padding: 0.3rem 1.5rem;
+}
+
+

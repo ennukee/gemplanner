@@ -1,0 +1,134 @@
+body {
+    background-color: #111;
+    color: #eee;
+    font-size: 10px;
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#quest-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.directional-button {
+    font-size: 40px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    
+    padding: 10px;
+    user-select: none;
+
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+.directional-button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.directional-button:active {
+    background-color: #555;
+}
+
+#quest-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 30%;
+}
+
+#act-number {
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+#quest-name {
+    margin-top: -.5rem;
+    font-size: 2rem;
+}
+
+/**
+ * CLASS SELECTOR ROW
+ */
+
+#class-selector {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+
+    place-content: center;
+}
+
+.class-selector-button {
+    font-size: 1rem;
+    width: 7rem;
+    padding: 0.6rem 0;
+    text-align: center;
+    user-select: none;
+
+    border: 1px solid #eee;
+    border-radius: 1.4rem;
+}
+
+.class-selector-button:hover {
+    cursor: pointer;
+}
+
+#Witch.active {
+    background-color: rgba(0,0,128,1);
+}
+#Witch:not(.active):hover {
+    background-color: rgba(0,0,128,0.3);
+}
+
+#Shadow.active {
+    background-color: rgba(0,128,128,1);
+}
+#Shadow:not(.active):hover {
+    background-color: rgba(0,128,128,0.3);
+}
+
+#Ranger.active {
+    background-color: rgba(0,128,0,1);
+}
+#Ranger:not(.active):hover {
+    background-color: rgba(0,128,0,0.3);
+}
+
+#Duelist.active {
+    background-color: rgba(128,128,0,1);
+}
+#Duelist:not(.active):hover {
+    background-color: rgba(128,128,0,0.3);
+}
+
+#Marauder.active {
+    background-color: rgba(128,0,0,1);
+}
+#Marauder:not(.active):hover {
+    background-color: rgba(128,0,0,0.3);
+}
+
+#Templar.active {
+    background-color: rgba(128,0,128,1);
+}
+#Templar:not(.active):hover {
+    background-color: rgba(128,0,128,0.3);
+}
+
+#Scion.active {
+    background-color: rgba(128,128,128,1);
+}
+#Scion:not(.active):hover {
+    background-color: rgba(128,128,128,0.3);
+}

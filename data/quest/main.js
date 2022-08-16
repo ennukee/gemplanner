@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 
 /*
 
@@ -66,12 +65,15 @@ const path = require('path');
     data.forEach(gem => {
         // step 1: quest rewards
         if (gem.quest_rewards.length > 0) {
-            processDataCluster(gem.quest_rewards[0], gem.name, 'directGems')
+            gem.quest_rewards.forEach(qr =>
+                processDataCluster(qr, gem.name, 'directGems'))
+            
         }
         if (gem.vendor_rewards.length > 0) {
             const nonCatchAll = gem.vendor_rewards.filter(g => (g.quest !== 'Fallen from Grace' && g.quest !== 'A Fixture of Fate'))
             if (nonCatchAll.length > 0) {
-                processDataCluster(nonCatchAll[0], gem.name, 'indirectGems')
+                nonCatchAll.forEach(qr => 
+                    processDataCluster(qr, gem.name, 'indirectGems'))
             }
         }
     })
